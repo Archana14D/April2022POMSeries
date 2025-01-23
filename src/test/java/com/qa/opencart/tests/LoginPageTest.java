@@ -28,7 +28,7 @@ public class LoginPageTest extends BaseTest {
 	@Test
 	public void loginTest() {
 		accPage = loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
-		String s1 = prop.getProperty("username");
+		//String s1 = prop.getProperty("username");
 		Assert.assertEquals(accPage.getAccountsPageTitle(), AppConstants.ACCOUNTS_PAGE_TITLE);
 	}
 }
